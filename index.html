@@ -1,0 +1,373 @@
+<!DOCTYPE html>
+<html lang="tr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Bilgisayar Mühendisliği öğrencisinin kişisel portfolyo web sitesi">
+    <meta name="keywords" content="bilgisayar mühendisliği, portfolio, web geliştirme, programlama">
+    <meta name="author" content="Computer Engineering Student">
+    <title>Portfolio - Bilgisayar Mühendisliği Öğrencisi</title>
+    
+    <link rel="icon" type="image/x-icon" href="data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'><text y='.9em' font-size='90'>💻</text></svg>">
+    
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+    
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+    
+   
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <button id="theme-toggle" class="theme-toggle" aria-label="Dark/Light mode toggle">
+        <i class="fas fa-moon"></i>
+    </button>
+
+    <nav class="navbar" id="navbar">
+        <div class="nav-container">
+            <div class="nav-brand">
+                <i class="fas fa-code"></i>
+                <span>Portfolio</span>
+            </div>
+            <ul class="nav-menu" id="nav-menu">
+                <li><a href="#home" class="nav-link">Ana Sayfa</a></li>
+                <li><a href="#about" class="nav-link">Hakkımda</a></li>
+                <li><a href="#skills" class="nav-link">Beceriler</a></li>
+                <li><a href="#contact" class="nav-link">İletişim</a></li>
+            </ul>
+            <div class="hamburger" id="hamburger">
+                <span></span>
+                <span></span>
+                <span></span>
+            </div>
+        </div>
+    </nav>
+
+    <section id="home" class="hero">
+      <div class="hero-background">
+            <div class="animated-bg"></div>
+        </div>
+        <div class="container">
+            <div class="hero-content">
+                <div class="hero-text">
+                    <h1 class="typing-text">Merhaba, ben Hamza. <span class="highlight">Bilgisayar Mühendisliği</span> öğrencisiyim.</h1>
+                    <p class="hero-description">
+                        Kod yazmayı, yeni teknolojiler öğrenmeyi ve kendimi geliştirmeyi seviyorum. Aydın'da yaşıyor, basketbol oynuyor ve web'in potansiyelini keşfediyorum.
+                    </p>
+                    <div class="hero-buttons">
+                        <a href="#skills" class="btn btn-primary">
+                            <i class="fas fa-rocket"></i>
+                            Becerilerim
+                        </a>
+                        <a href="#contact" class="btn btn-secondary">
+                            <i class="fas fa-envelope"></i>
+                            İletişime Geç
+                        </a>
+                    </div>
+                </div>
+                <div class="hero-avatar">
+                    <div class="avatar-container">
+                        <div class="avatar-img">
+                            <i class="fas fa-user-graduate"></i>
+                        </div>
+                        <div class="floating-icons">
+                            <i class="fab fa-js-square"></i>
+                            <i class="fab fa-react"></i>
+                            <i class="fab fa-python"></i>
+                            <i class="fab fa-java"></i>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section id="about" class="about">
+        <div class="container">
+            <div class="section-header">
+                <h2 class="section-title">Hakkımda</h2>
+                <p class="section-subtitle">Kısaca ben ve ilgi alanlarım</p>
+            </div>
+            
+            <div class="about-content">
+                <div class="about-text">
+                    <div class="about-card">
+                        <h3><i class="fas fa-map-marker-alt"></i> Yaşam</h3>
+                        <p>Liseden beri Aydın'da yaşıyorum, şu an Isparta'da üniversite okuyorum. 3. sınıfım.</p>
+                    </div>
+                    
+                    <div class="about-card">
+                        <h3><i class="fas fa-basketball-ball"></i> Spor</h3>
+                        <p>Ortaokulda izcilik yaptım, sonrasında basketbola başladım ve hala aktif olarak oynuyorum.</p>
+                    </div>
+                    
+                    <div class="about-card">
+                        <h3><i class="fas fa-gamepad"></i> Hobiler</h3>
+                        <p>Bilgisayar oyunları, basketbol ve müzik dinlemek en sevdiğim hobilerim arasında.</p>
+                    </div>
+                    
+                    <div class="about-card">
+                        <h3><i class="fas fa-bullseye"></i> Hedef</h3>
+                        <p>Kendimi mobil uygulama geliştirme ve web teknolojileri alanında geliştirmeyi hedefliyorum.</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+  <section id="skills" class="skills">
+        <div class="container">
+            <div class="section-header">
+                <h2 class="section-title">Beceriler & Teknolojiler</h2>
+                <p class="section-subtitle">Üniversite hayatım boyunca öğrendiğim ve kullandığım teknolojiler</p>
+            </div>
+            
+            <div class="skills-content">
+                <div class="skills-category">
+                    <h3><i class="fas fa-code"></i> Programlama Dilleri</h3>
+                    <div class="skills-grid">
+                        <div class="skill-item">
+                            <i class="fab fa-js-square"></i>
+                            <span>JavaScript</span>
+                            <div class="skill-level">
+                                <div class="skill-bar" data-skill="60"></div>
+                            </div>
+                        </div>
+                        <div class="skill-item">
+                            <i class="fab fa-python"></i>
+                            <span>Python</span>
+                            <div class="skill-level">
+                                <div class="skill-bar" data-skill="70"></div>
+                            </div>
+                        </div>
+                        <div class="skill-item">
+                            <i class="fab fa-java"></i>
+                            <span>Java</span>
+                            <div class="skill-level">
+                                <div class="skill-bar" data-skill="75"></div>
+                            </div>
+                        </div>
+                        <div class="skill-item">
+                            <i class="fas fa-database"></i>
+                            <span>C/C++</span>
+                            <div class="skill-level">
+                                <div class="skill-bar" data-skill="65"></div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                
+                <div class="skills-category">
+                    <h3><i class="fas fa-globe"></i> Web Teknolojileri</h3>
+                    <div class="skills-grid">
+                        <div class="skill-item">
+                            <i class="fab fa-html5"></i>
+                            <span>HTML5</span>
+                            <div class="skill-level">
+                                <div class="skill-bar" data-skill="85"></div>
+                            </div>
+                        </div>
+                        <div class="skill-item">
+                            <i class="fab fa-css3-alt"></i>
+                            <span>CSS3</span>
+                            <div class="skill-level">
+                                <div class="skill-bar" data-skill="75"></div>
+                            </div>
+                        </div>
+                        <div class="skill-item">
+                            <i class="fab fa-react"></i>
+                            <span>React</span>
+                            <div class="skill-level">
+                                <div class="skill-bar" data-skill="45"></div>
+                            </div>
+                        </div>
+                        <div class="skill-item">
+                            <i class="fab fa-node-js"></i>
+                            <span>Node.js</span>
+                            <div class="skill-level">
+                                <div class="skill-bar" data-skill="40"></div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                
+                <div class="skills-category">
+                    <h3><i class="fas fa-tools"></i> Araçlar & Veritabanı</h3>
+                    <div class="skills-grid">
+                        <div class="skill-item">
+                            <i class="fab fa-git-alt"></i>
+                            <span>Git/GitHub</span>
+                            <div class="skill-level">
+                                <div class="skill-bar" data-skill="70"></div>
+                            </div>
+                        </div>
+                        <div class="skill-item">
+                            <i class="fas fa-database"></i>
+                            <span>MySQL</span>
+                            <div class="skill-level">
+                                <div class="skill-bar" data-skill="60"></div>
+                            </div>
+                        </div>
+                        <div class="skill-item">
+                            <i class="fab fa-android"></i>
+                            <span>Android</span>
+                            <div class="skill-level">
+                                <div class="skill-bar" data-skill="40"></div>
+                            </div>
+                        </div>
+                        <div class="skill-item">
+                            <i class="fas fa-terminal"></i>
+                            <span>Linux</span>
+                            <div class="skill-level">
+                                <div class="skill-bar" data-skill="50"></div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+   <section id="music" class="music">
+        <div class="container">
+            <div class="section-header">
+                <h2 class="section-title">Biraz Mozart</h2>
+            </div>
+            <div class="video-container">
+                <iframe 
+                    src="https://www.youtube.com/embed/HMjQygwPI1c" 
+                    title="Biraz Mozart"
+                    frameborder="0" 
+                    allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" 
+                    allowfullscreen>
+                </iframe>
+            </div>
+        </div>
+    </section>
+
+        <section id="art" class="art">
+        <div class="container">
+            <div class="section-header">
+                <h2 class="section-title">Biraz Sanat</h2>
+            </div>
+            <div class="art-gallery">
+                <div class="art-item">
+                    <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/e/ea/Van_Gogh_-_Starry_Night_-_Google_Art_Project.jpg/1280px-Van_Gogh_-_Starry_Night_-_Google_Art_Project.jpg" alt="Yıldızlı Gece - Van Gogh" loading="lazy">
+                    <div class="art-info">
+                        <h3>Yıldızlı Gece</h3>
+                        <p>Vincent van Gogh, 1889</p>
+                    </div>
+                </div>
+                
+                <div class="art-item">
+                    <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/e/ec/Mona_Lisa%2C_by_Leonardo_da_Vinci%2C_from_C2RMF_retouched.jpg/687px-Mona_Lisa%2C_by_Leonardo_da_Vinci%2C_from_C2RMF_retouched.jpg" alt="Mona Lisa - Leonardo da Vinci" loading="lazy">
+                    <div class="art-info">
+                        <h3>Mona Lisa</h3>
+                        <p>Leonardo da Vinci, 1503-1519</p>
+                    </div>
+                </div>
+                
+                <div class="art-item">
+                    <img src="https://upload.wikimedia.org/wikipedia/en/thumb/4/4c/Les_Demoiselles_d%27Avignon.jpg/640px-Les_Demoiselles_d%27Avignon.jpg" alt="Les Demoiselles d'Avignon - Picasso" loading="lazy">
+                    <div class="art-info">
+                        <h3>Les Demoiselles d'Avignon</h3>
+                        <p>Pablo Picasso, 1907</p>
+                    </div>
+                </div>
+                
+                <div class="art-item">
+                    <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/9/9d/The_Great_Wave_off_Kanagawa.jpg/1280px-The_Great_Wave_off_Kanagawa.jpg" alt="Kanagawa'nın Büyük Dalgası - Hokusai" loading="lazy">
+                    <div class="art-info">
+                        <h3>Kanagawa'nın Büyük Dalgası</h3>
+                        <p>Katsushika Hokusai, 1831</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+  <section id="contact" class="contact">
+        <div class="container">
+            <div class="section-header">
+                <h2 class="section-title">İletişim</h2>
+            </div>
+            
+            <div class="contact-content">
+                <div class="contact-info">
+                    <div class="contact-item">
+                        <div class="contact-icon">
+                            <i class="fas fa-map-marker-alt"></i>
+                        </div>
+                        <div class="contact-details">
+                            <h4>Konum</h4>
+                            <p>Aydın, Türkiye</p>
+                        </div>
+                    </div>
+                    
+                    <div class="contact-item">
+                        <div class="contact-icon">
+                            <i class="fas fa-envelope"></i>
+                        </div>
+                        <div class="contact-details">
+                            <h4>E-mail</h4>
+                            <p><a href="mailto:hamzacakmak832@gmail.com">hamzacakmak832@gmail.com</a></p>
+                        </div>
+                    </div>
+                    
+                    <div class="contact-item">
+                        <div class="contact-icon">
+                            <i class="fab fa-github"></i>
+                        </div>
+                        <div class="contact-details">
+                            <h4>GitHub</h4>
+                            <p><a href="https://github.com/hamzacakmakk" target="_blank">github.com/hamzacakmakk</a></p>
+                        </div>
+                    </div>
+                    
+                    <div class="contact-item">
+                        <div class="contact-icon">
+                            <i class="fab fa-linkedin"></i>
+                        </div>
+                        <div class="contact-details">
+                            <h4>LinkedIn</h4>
+                            <p><a href="https://www.linkedin.com/in/hamza-%C3%A7akmak-496901287/" target="_blank">Hamza Çakmak</a></p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+     <footer class="footer">
+        <div class="container">
+            <div class="footer-content">
+                <div class="footer-section">
+                    <h4><i class="fas fa-code"></i> Portfolio</h4>
+                    <p>Bilgisayar Mühendisliği öğrencisinin kişisel portfolio sitesi.</p>
+                </div>
+                <div class="footer-section">
+                    <h4>Hızlı Linkler</h4>
+                    <ul>
+                        <li><a href="#home">Ana Sayfa</a></li>
+                        <li><a href="#about">Hakkımda</a></li>
+                        <li><a href="#skills">Beceriler</a></li>
+                    </ul>
+                </div>
+                <div class="footer-section">
+                    <h4>Sosyal Medya</h4>
+                    <div class="social-links">
+                        <a href="https://github.com/hamzacakmakk" target="_blank"><i class="fab fa-github"></i></a>
+                        <a href="https://www.linkedin.com/in/hamza-%C3%A7akmak-496901287/" target="_blank"><i class="fab fa-linkedin"></i></a>
+                        <a href="mailto:hamzacakmak832@gmail.com"><i class="fas fa-envelope"></i></a>
+                        <a href="#contact"><i class="fas fa-phone"></i></a>
+                    </div>
+                </div>
+            </div>
+            <div class="footer-bottom">
+                <p>&copy; Muhammed Hamza Çakmak 2321032045</p>
+            </div>
+        </div>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>
